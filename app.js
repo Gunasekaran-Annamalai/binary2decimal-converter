@@ -11,11 +11,9 @@ input.addEventListener('change', () => {
         decimal += parseInt((input.value[i]) * Math.pow(2, (input.value.length-1)-i));
     }
     dval.style.display = "none";
-    console.log(decimal);
 });
 
 btn.addEventListener('click', (e) => {
-    console.log(decimal);
     e.preventDefault();
     dval.textContent = decimal;
     answer.style.display = "block";
